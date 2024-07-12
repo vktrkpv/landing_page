@@ -462,20 +462,6 @@ width: 238px;
 
 }
 
-.skills_header{
-    color: #FFF;
-
-text-align: center;
-font-family: Outfit;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 12px; /* 75% */
-letter-spacing: 2.4px;
-text-transform: capitalize;
-}
-
-
 /* Portfolio */
 
 .page_portfolio{
@@ -530,60 +516,98 @@ background: #D9D9D9;
  }
 
 
- /* skills */
+ /* skills starts */
 
  .page_skills { }
 .skills__container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
  }
-.skills_header {
-    width: 97px;
+.skills_header { }
+.skills_title {
+    margin-top: 16px;
+ }
+.skills_btn_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 57px;
+    gap: 39px;
+
+ }
+.btn_skills {
+    width: 121px;
 height: 36px;
 flex-shrink: 0;
 border-radius: 4px;
 background: #24263B;
 
 box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
+color: #FFF;
 
- }
+text-align: center;
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 12px; /* 75% */
+text-transform: capitalize;
+}
 
-.skills__container{
+.btn_skills:hover{
+    cursor: pointer;
+border-radius: 4px;
+background: #FE461C;
+box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
 
 }
 
-.skills_title { }
-.skills_btn_container { }
-.btn { }
 .skills_img_contaimer {
     display: flex;
-    gap: 15px   ;
+    justify-content: space-between;
+    gap: 15px;
     margin-top: 49px;
  }
-.skills {
+.skills_box {
+    display: flex;
+    flex-direction: column;
     width: 606px;
 height: 345px;
 flex-shrink: 0;
- }
+align-items: center;
+    
 
-.gap{
-    margin-top: 56px;
 }
-
-.structure{
+.structure_skill_box {
     display: flex;
     justify-content: space-between;
-}
+    margin-top: 15px;
 
-
-
-.line{
-    margin-top: 23px;
+ }
+.skills_line {
     width: 606px;
 height: 18px;
 flex-shrink: 0;
-}
+margin-top: 15px;
 
+}
+.skills_img_about {
+    width: 572.007px;
+height: 504.172px;
+flex-shrink: 0;
+margin-bottom: 40px;
+
+ }
+
+  /* skills ends */
+
+
+
+
+
+
+
+/* Testimonial */
  .page_testimonial{
     background-color:#24263B;
     height: 100vh;
@@ -904,5 +928,11 @@ flex-shrink: 0;
     margin-bottom: 155px;
 }
 
+.footer_box{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 
